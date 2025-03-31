@@ -3,8 +3,9 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function GuestNav() {
-  return (
-    <nav className="top-0 w-full flex items-center justify-between bg-white bg-opacity-90 shadow-md py-4 px-6 fixed z-10">
+  return ( 
+    <nav className="bg-white bg-opacity-90 shadow-md py-4 px-6 top-0 left-0 right-0 z-50 drop-shadow-md">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
       <Link href={"/"}>
         <motion.div 
           className="flex items-center space-x-2"
@@ -41,6 +42,7 @@ export default function GuestNav() {
             Sign Up
           </motion.button>
         </Link>
+      </div>
       </div>
     </nav>
   );
