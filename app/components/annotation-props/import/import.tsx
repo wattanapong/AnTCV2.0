@@ -38,7 +38,8 @@ const ImportDataset = () => {
         });
 
         if (response.ok) {
-          setUploadStatus({ message: "Dataset imported successfully!", type: 'success' });
+          const result = await response.json();
+          setUploadStatus({ message: result.message, type: result.type });
         } else {
           setUploadStatus({ message: "Import failed. Please try again.", type: 'error' });
         }

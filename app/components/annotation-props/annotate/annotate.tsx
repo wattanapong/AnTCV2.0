@@ -242,6 +242,7 @@ export default function Annotate() {
           <span className="mx-4 text-blue-700 font-medium truncate max-w-xs">
             {activeUrl.split("/").pop()}
           </span>
+          
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
