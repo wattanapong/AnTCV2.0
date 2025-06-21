@@ -7,6 +7,7 @@ import { Tag, Upload, Users, Image as ImageIcon } from 'lucide-react';
 import Link from "next/link";
 import Script from 'next/script';
 
+
 export default function LandingPage() {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -38,13 +39,12 @@ export default function LandingPage() {
     },
   ];
 
-  
-
   return (
     <>
       {/* <main className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300 pt-20"> */}
         
         {/* { username ? <GuestNav /> : <Navbar /> } */}
+
         <main className="min-h-screen bg-gradient-to-br from-blue-100 via-blue-200 to-blue-300">
         <Navbar />
 
@@ -121,6 +121,7 @@ export default function LandingPage() {
         <footer className="fixed bottom-0 w-full py-4 text-center bg-white bg-opacity-90 shadow-md">
           <p className="text-blue-600">© 2024 AnTCV. All rights reserved.</p>
         </footer>
+
         </main>
     </>
   );

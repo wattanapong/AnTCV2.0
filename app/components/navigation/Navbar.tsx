@@ -4,11 +4,12 @@ import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-import { useAuthStore } from "../../../store/authStore";
+import { useAuthStore } from "@/store/authStore";
 
 const Navbar = () => {
   const router = useRouter();
   const [showModal, setShowModal] = useState(false);
+
   const { username, fetchUsername } = useAuthStore();
 
   useEffect(() => {
@@ -83,7 +84,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
       <AnimatePresence>
         {showModal && (
           <motion.div
